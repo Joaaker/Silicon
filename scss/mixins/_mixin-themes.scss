@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin light-mode {
+  html.light-mode & {
+    @content;
+  }
+}

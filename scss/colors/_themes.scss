@@ -10,6 +10,13 @@ html.dark-mode{
     }
 }
 
+.light-display{
+    display: none;
+    @include light-mode{
+        display: block;
+    }
+}
+
 
 h1, h2, h3, h4, h5, h6, .p-logo, .store-btn, #hamburger, i{
     @include dark-mode {
@@ -85,10 +92,15 @@ button.circle-btn,
     }
 }
 
-.FAQ-item.expanded .FAQ-answer { 
+.FAQ-item.expanded{ 
     @include dark-mode{
-        @include mobile{
-            border-bottom: 1px solid var(--clr-white-opacity);
+        .dropdown-btn i{
+            background-color: var(--clr-primary);
+        }
+        .FAQ-answer {
+            @include mobile{
+                border-bottom: 1px solid var(--clr-white-opacity);
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 article.features{
-  padding: 1rem;
+  padding: 0.7rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -47,6 +47,7 @@ article.features{
     display: flex;
     font-size: 18px;
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
     max-width: 768px;
 
     @include mobile-tablet{

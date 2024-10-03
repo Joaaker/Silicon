@@ -16,6 +16,10 @@
         }
     }
 
+    @include tablet{
+        height: 220px;
+    }
+
     @include tablet-desktop{
         display: flex;
         justify-content: space-around;
