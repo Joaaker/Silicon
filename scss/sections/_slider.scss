@@ -4,9 +4,8 @@
   @include flex-column;
   align-items: center;
   gap: 1rem;
-  @include mobile{
-    padding: 2rem 0;
-  }
+  padding: 2rem 0;
+  
 
   h2{
     font-size: 1.7rem;

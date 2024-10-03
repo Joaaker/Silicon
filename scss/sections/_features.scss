@@ -3,11 +3,16 @@ article.features{
   margin-left: auto;
   margin-right: auto;
 
+  @include tablet-desktop{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+
   @include desktop{
     width: 1320px;
     display: grid;
     justify-content: space-between;
-    padding-bottom: 4rem;
   }
 }
 
@@ -49,10 +54,15 @@ article.features{
     margin-bottom: 1.5rem;
     margin-top: 1rem;
     max-width: 768px;
+    
 
     @include mobile-tablet{
       text-align: center;
-      @include center;     
+      @include center;
+    }
+    
+    @include tablet{
+      margin: 1rem 1.2rem 1.5rem 1.2rem;     
     }
   }
 }

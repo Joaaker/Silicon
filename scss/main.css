@@ -627,6 +627,7 @@ main p {
   .all-logos-container {
     max-width: 1320px;
     padding: 3rem 0;
+    padding-top: 4rem;
     gap: 1rem;
   }
 }
@@ -660,12 +661,17 @@ article.features {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 768px) {
+  article.features {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+}
 @media (min-width: 1340px) {
   article.features {
     width: 1320px;
     display: grid;
     justify-content: space-between;
-    padding-bottom: 4rem;
   }
 }
 
@@ -713,6 +719,11 @@ article.features {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1339px) {
+  .appFeatures .lorem-text {
+    margin: 1rem 1.2rem 1.5rem 1.2rem;
   }
 }
 
@@ -804,11 +815,7 @@ article.features {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-@media (max-width: 767px) {
-  .slider {
-    padding: 2rem 0;
-  }
+  padding: 2rem 0;
 }
 .slider h2 {
   font-size: 1.7rem;
