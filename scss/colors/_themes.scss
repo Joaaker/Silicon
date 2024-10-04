@@ -2,7 +2,6 @@ html.dark-mode{
     background-color: var(--clr-dark900);
 }
 
-
 .dark-display{
     display: none;
     @include dark-mode{
@@ -17,14 +16,11 @@ html.dark-mode{
     }
 }
 
-
 h1, h2, h3, h4, h5, h6, .p-logo, .store-btn, #hamburger, i{
     @include dark-mode {
         color: var(--clr-white);
     }
 }
-
-
 
 p, .upperWrapper ul li{
     @include dark-mode{
@@ -37,7 +33,6 @@ p, .upperWrapper ul li{
         color: var(--clr-gray300);
     }
 }
-
 
 button.circle-btn,
 .img-container-features img{
@@ -56,7 +51,6 @@ button.circle-btn,
         color: var(--clr-white-high-opacity);
     }
 }
-
 
 .logo-container{
     @include dark-mode{
@@ -164,7 +158,6 @@ button.circle-btn,
         background-color: var(--clr-white);
     }
 }
-
 
 .light-display{
     @include dark-mode{

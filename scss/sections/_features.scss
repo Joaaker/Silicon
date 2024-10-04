@@ -77,7 +77,6 @@ article.features{
   @include desktop{
     gap: 3rem; 
   }
-  
 }
 
 .featuresSection{
@@ -91,7 +90,6 @@ article.features{
     grid-row: 1 / 4;
     margin-right: 0;
     margin-left: auto;
-    
 
     @include tablet-desktop{
       padding-right: 0.5rem;

@@ -4,6 +4,10 @@
     @include center;
     margin: 0.5rem auto;
     border-radius: 8px;
+    
+    img{
+        max-width: 100%;
+    }
 
     @include mobile{//padding med clamp skriven av ChatGPT
         padding: 0.7rem clamp(6rem, 6rem + 1vw, 8rem);

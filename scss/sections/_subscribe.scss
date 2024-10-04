@@ -43,11 +43,11 @@
         }
     }
 }
-  
+
 .bell-container{
-width: 78px;
-user-select: none;
-margin: 1rem;
+    width: 78px;
+    user-select: none;
+    margin: 1rem;
 
     img{
         width: 100%;
@@ -65,11 +65,11 @@ margin: 1rem;
 }
   
 .subscribe-form-container{
-display: flex;
-justify-self: center;
-max-width: max-content;
-margin-bottom: 1rem;
-background-color: transparent;
+    display: flex;
+    justify-self: center;
+    max-width: max-content;
+    margin-bottom: 1rem;
+    background-color: transparent;
 
     @include mobile{
         grid-column: 1 / 3;
@@ -83,80 +83,5 @@ background-color: transparent;
 
     @include desktop{
         margin-right: auto;    
-    }
-}
-  
-  
-.subscribe-form{
-background-color: var(--clr-white);
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid var(--clr-gray300);
-border-radius: 8px;
-border-bottom-right-radius: 0px;
-border-top-right-radius: 0px;
-width: 100%;
-max-width: 400px;
-
-    label{
-        margin: 0 0.5rem;
-        user-select: none;
-
-        @include mobile{
-            border: none;
-            max-width: 225px;
-        }
-        
-        i{
-            margin-left: 0.8rem;
-            
-            @include tablet-desktop{
-                margin-left: 0.5rem;
-            }
-
-            @include desktop{
-                margin-left: 0.5rem;
-            }
-        }
-    }
-
-    input{
-        margin: 0 0.5rem;
-        border: none;
-        outline: none;
-        overflow: hidden;
-        font-size: 14px;
-
-        @include desktop{
-            min-width: 270px;
-        }
-    }
-
-}
-
-#subscribe-btn{
-overflow: hidden;
-width: 100%;
-max-width: 120px;
-padding: 10px 2px;
-border-top-left-radius: 0px;
-border-bottom-left-radius: 0px;
-padding:  16px 8px;
-
-    @include mobile{
-        padding:  1rem 0.5rem;
-        
-        @media (max-width: 335px){ /* För väldigt små telefoner*/
-            padding: 1rem 0px;
-        }
-    }
-
-    @include tablet{
-        padding: 10px 2rem;
-    }
-
-    @include desktop{
-        padding: 18px 70px;
     }
 }

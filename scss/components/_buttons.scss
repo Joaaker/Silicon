@@ -74,7 +74,6 @@
       color: var(--clr-icon);
       font-size: 12px; 
     }
-
   }
 
   span{
@@ -86,4 +85,29 @@
 
 .learn-more-btn{
   width: 160px;
+}
+
+#subscribe-btn{ 
+  overflow: hidden;
+  width: 100%;
+  max-width: 120px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding:  16px 8px;
+  
+  @include mobile{
+    padding:  1rem 0.5rem;
+    
+    @media (max-width: 335px){ /* För väldigt små telefoner*/
+        padding: 1rem 0px;
+    }
+  }
+
+  @include tablet{
+      padding: 0.6rem 2rem;
+  }
+
+  @include desktop{
+      padding: 1.2rem 4.5rem;
+  }
 }
